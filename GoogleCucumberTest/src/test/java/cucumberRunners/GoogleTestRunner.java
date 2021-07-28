@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/resources/Features",
-		glue = {"cucumberGlue"}
+		glue = {"cucumberGlue"},
+		plugin = {"pretty","html:target/HTMLReports/Junit-Report.html"}
 		)
 public class GoogleTestRunner {
 }

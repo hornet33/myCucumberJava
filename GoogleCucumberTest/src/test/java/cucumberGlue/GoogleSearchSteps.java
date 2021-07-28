@@ -3,6 +3,7 @@ package cucumberGlue;
 import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.*;
@@ -33,13 +34,13 @@ public class GoogleSearchSteps {
 
 	@And("user clicks on the visible Google Search button")
 	public void user_clicks_on_the_visible_google_search_button() {
-		driver.findElement(By.name("q")).sendKeys("\t");
+		driver.findElement(By.name("q")).sendKeys(Keys.TAB);
 		driver.findElement(By.xpath("(//input[@name='btnK'])[2]")).click();
 	}
 
 	@And("user presses the Enter key")
 	public void user_presses_the_enter_key() {
-		driver.findElement(By.name("q")).sendKeys("\n");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 	}
 
 	@Then("user is taken to the search results page")

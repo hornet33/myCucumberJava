@@ -10,5 +10,5 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"cucumberGlue"},
 		plugin = {"pretty","html:target/HTMLReports/Junit-Report.html"}
 		)
-public class GoogleTestRunner {
+public class GoogleRunnerTest {
 }

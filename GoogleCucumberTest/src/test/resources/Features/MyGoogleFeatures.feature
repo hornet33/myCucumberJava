@@ -1,7 +1,7 @@
 @GoogleSearch
 Feature: Feature to test Google Search Functionality
 
-  Scenario: Test Google Search functionality with visibile search button
+  Scenario: Test Google Search functionality with visible search button
     Given the Chrome browser is open
     And user is on the Google search page
     When user enters a text "Selenium HQ" in the Search Box
